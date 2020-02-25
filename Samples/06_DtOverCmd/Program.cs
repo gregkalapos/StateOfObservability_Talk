@@ -41,8 +41,6 @@ namespace DistributedTracingOverCmdParameter
 
 				try
 				{
-					Thread.Sleep(300);
-
 					var outgoingDistributedTracingData = Agent.Tracer.CurrentTransaction?.OutgoingDistributedTracingData?.SerializeToString();
 
 					Console.WriteLine($"The value of the distributed tracing data: {outgoingDistributedTracingData}");
