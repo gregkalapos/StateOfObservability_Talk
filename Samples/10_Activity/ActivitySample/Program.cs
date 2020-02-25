@@ -61,7 +61,7 @@ namespace ActivitySample
 					if (receivedEvent.Value.GetType().GetTypeInfo().GetDeclaredProperty("Request")
 						?.GetValue(receivedEvent.Value) is HttpRequestMessage requestMessage)
 					{
-						Console.WriteLine($"HTTP Request start: {requestMessage.Method} -" +
+						Console.WriteLine($"System.Net.Http.HttpRequestOut.Start: {requestMessage.Method} -" +
 							$" {requestMessage.RequestUri} - activity id: {Activity.Current?.Id}, parentId: {Activity.Current?.ParentId}");
 					}
 
@@ -72,7 +72,7 @@ namespace ActivitySample
 					if (receivedEvent.Value.GetType().GetTypeInfo().GetDeclaredProperty("Response")
 						?.GetValue(receivedEvent.Value) is HttpResponseMessage responseMessage)
 					{
-						Console.WriteLine($"HTTP Request finished: took " +
+						Console.WriteLine($"System.Net.Http.HttpRequestOut.Stop: took " +
 							$"{_stopwatch.ElapsedMilliseconds}ms, status code:" +
 								$" {responseMessage.StatusCode} - activity id: {Activity.Current?.Id}, parentId: {Activity.Current?.ParentId}");
 					}
