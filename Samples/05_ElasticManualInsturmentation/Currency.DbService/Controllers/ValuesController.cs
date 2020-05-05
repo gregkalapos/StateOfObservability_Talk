@@ -88,7 +88,7 @@ namespace Currency.DbService.Controllers
 			}
 			catch (Exception e)
 			{
-				span.CaptureException(e);
+				span?.CaptureException(e);
 				throw;
 			}
 			finally
