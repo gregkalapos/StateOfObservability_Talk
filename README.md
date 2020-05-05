@@ -2,6 +2,7 @@
 Sample code and slides
 
 [Link to Vienna event](https://www.meetup.com/dotnet-austria/events/268956146/)
+
 [Link to Graz event](https://www.meetup.com/MicrosoftDeveloperGraz/events/268748545/)
 
 Traces, metrics, and logs from a production system are extremely useful in order to find and fix bugs in our applications, especially in today's micro-service environments. But collecting and correlating this data is not trivial. Observability offers the solution to this problem.
