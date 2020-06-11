@@ -1,6 +1,8 @@
 # The State of Observability in .NET - Tracing .NET applications in production
 Sample code and slides
 
+[Link to Budapest online event](https://www.meetup.com/Talentera-Meetup/events/270761337/)
+
 [Link to Vienna event](https://www.meetup.com/dotnet-austria/events/268956146/)
 
 [Link to Graz event](https://www.meetup.com/MicrosoftDeveloperGraz/events/268748545/)
